@@ -1,0 +1,15 @@
+
+extends layout
+
+block content
+    h1 Créer compte
+    form#formCreateUser(method='POST' action="/adduser", name="adduser") <!-- addition à l'url -->
+        p ident
+        input#inputIdent(type="text", name="ident")
+        p email
+        input#inputEmail(type="email", name="email")
+        p password
+        input#inputPassword(type="password", name="password")
+        p confirm password
+        input#inputConfirm_password(type="password", name="confirm_password")
+        button#btnCreate(type="submit", value="Créer compte", name="create") create

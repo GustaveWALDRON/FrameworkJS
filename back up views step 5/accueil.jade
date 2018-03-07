@@ -1,0 +1,9 @@
+html(lang="en")
+    head
+        title= pageTitle
+    body
+    h1 Accueil
+
+    if user !=null
+        p #{params.ident}!
+        input(type="button", value="profil")

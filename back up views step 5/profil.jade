@@ -1,0 +1,26 @@
+html(lang="en")
+    head
+        title= pageTitle
+    body
+
+    if user !=null
+        p #{ident}!
+        input(type="button", value="profil")
+
+    h1 Profil
+    p ident
+    input(type="text")
+    p email
+    input(type="email")
+    p password
+    input(type="password")
+    p confirm password
+    input(type="password")
+    input(type="button", value="save changes")
+
+    p newsletter
+    input(type="checkbox", name="CB_newsletter") I want to receive newsletter
+
+    p delete account ?
+    input(type="button", value="delete account !")
+    p Votre nom sera remplacé par "utilisateur supprimé" dans vos commentaires

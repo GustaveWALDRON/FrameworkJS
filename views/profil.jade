@@ -1,0 +1,25 @@
+extends layout
+block content
+
+    if user !=null
+        p #{ident}!
+
+        h1 Profil
+        p ident
+        input(type="text", placeholder="#{ident}")
+        p email
+        input(type="email", placeholder="#{email}")
+        p password
+        input(type="password")
+        p confirm password
+        input(type="password")
+        input(type="button", value="save changes")
+
+        p newsletter
+        input(type="checkbox", name="CB_newsletter") I want to receive newsletter
+
+        p delete account ?
+        input(type="button", value="delete account !")
+        p Votre nom sera remplacé par "utilisateur supprimé" dans vos commentaires
+
+
